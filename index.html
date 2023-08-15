@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="media/favicons/dark.ico" type="image/x-icon">
+    <style>
+        body, html{
+            height: 100%;
+            margin: 0;
+            font-family: sans-serif;
+        }
+
+        *{
+            box-sizing: border-box;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .header{
+            position: absolute;
+            font-style: italic;
+            color: aliceblue;
+            top: 5%;
+            left: 36%;
+            border: 2px solid grey;
+            background-color: transparent;
+            box-shadow: 5px 5px 5px black;
+            text-align: center;
+            padding: 20px;
+            z-index: 2;
+            height: 100px;
+        }
+
+        .bgimage{
+            background-image: url(media/thumbs/bg.jpg);
+            height: 100%;
+            transform: translateY(0px);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: blur(10px);
+            animation: flutuar 5s ease-in-out infinite;
+        }
+
+        .image{
+            border-radius: 40px;
+            border: 3px solid rebeccapurple;
+            position: absolute;
+        }
+
+        .image:hover{
+            transform: scale(0.90);
+        }
+
+        .card{
+            position: absolute;
+            display: flex;
+            margin: 0 auto;
+            border-radius: 40px;
+            border: 3px solid black;
+            top: 10em;
+            left: 36em;
+            width: 760px;
+            height: 480px;
+            background-color: transparent;
+            box-shadow: 15px 15px 5px black;
+        }
+
+        .card1{
+            width: 10px;
+            position: absolute;
+            margin: 1 auto;
+            padding: 8px;
+        }
+        
+        .card2{
+            position: absolute;
+            right: 23em;
+            margin: 0 auto;
+            padding: 8px;
+        }
+
+        .card3{
+            position: absolute;
+            top: 15em;
+            margin: 1 auto;
+            padding: 8px;
+        }
+
+        .card4{
+            position: absolute;
+            top: 15em;
+            right: 23em;
+            margin: 1 auto;
+            padding: 8px;
+        }
+
+
+@keyframes flutuar{
+            0%{
+                transform: translatey(0px);
+                transform: scale(1);
+            }
+            50%{
+                transform: translateY(-10px);
+                transform: scale(98%);
+            }
+            100%{
+                transform: translateY(0px);
+                transform: scale(1);
+            }
+        }
+    </style>
+    <title>Darktube</title>
+</head>
+<body>
+    
+    <div class="bgimage"></div>
+    
+    <div class="header">
+    <h1>Bem vindo ao DarkyTube</h1>
+    <h2>Aqui estão alguns videos que eu recomendo</h2>
+    </div>
+    
+    <div class="card"> 
+
+        <div class="card1">
+            <a href="guanabara.html"><img class="image" src="media/thumbs/guanabara.jpg"></a>
+        </div>
+
+        <div class="card2">
+            <a href="forever.html"><img class="image" src="media/thumbs/forever.jpg"></a>
+        </div>
+
+        <div class="card3">
+            <a href="ileox.html"><img class="image" src="media/thumbs/ileox.jpg"></a>
+        </div>
+        
+        <div class="card4">
+            <a href="xou.html"><img class="image" src="media/thumbs/xou.jpg"></a>
+        </div>
+
+    </div>
+
+
+    
+</body>
+</html>
